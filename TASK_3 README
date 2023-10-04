@@ -1,0 +1,41 @@
+# Car Price Prediction
+
+This repository contains a machine learning project for predicting car prices based on various features such as year, selling price, present price, kilometers driven, fuel type, selling type, transmission, and owner history. The project involves exploratory data analysis (EDA), building and tuning four different regression models, and evaluating their performance.
+
+## Data Description
+
+The dataset includes information about various car listings, including their characteristics and selling prices. It serves as the foundation for our predictive modeling task.
+
+## Exploratory Data Analysis (EDA)
+
+An advanced EDA was conducted to gain insights into the dataset. This included data visualization, statistical analysis, and feature engineering. Key findings from the EDA phase were used to inform model selection and feature preprocessing.
+
+## Model Building
+
+Four regression models were built to predict car prices:
+
+1. **Random Forest Regressor**: Random forest regression was chosen for its ability to handle complex relationships in the data.
+
+2. **XGBoost Regressor**: XGBoost, a gradient boosting algorithm, was employed for its high predictive power.
+
+3. **Support Vector Regressor (SVR)**: SVR was utilized to capture non-linear relationships between features and the target variable.
+
+## Hyperparameter Tuning
+
+Hyperparameter tuning was performed for each model using techniques such as RandomizedSearchCV and GridSearchCV to optimize model performance.
+
+## Model Evaluation
+
+The models were evaluated using metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), and R-squared (R2). These metrics provide a comprehensive view of the models' accuracy and predictive power.
+
+## Model Comparison
+
+Based on the evaluation results, the XGBoost model demonstrated the best performance, achieving the lowest RMSE and the highest R2. Therefore, it was selected as the best model for car price prediction in this project.
+
+## Visualizations
+
+Several visualizations were created to present the results, including bar plots comparing RMSE values and a scatter plot illustrating the actual vs. predicted car prices using the XGBoost model.
+
+## Conclusion
+
+This project showcases the process of building, tuning, and evaluating regression models for car price prediction. The XGBoost model emerged as the most accurate predictor among the models considered. Future work could involve further feature engineering and data preprocessing to improve model performance.
